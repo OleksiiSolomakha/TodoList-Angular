@@ -8,7 +8,7 @@ import {InterfaceService} from '../interface.service';
 })
 export class ListComponent implements OnInit {
 
-  constructor(private todoService: InterfaceService) { }
+  constructor(public todoService: InterfaceService) { }
 
   ngOnInit() {
     this.todoService.getTodos();
