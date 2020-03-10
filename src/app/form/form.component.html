@@ -1,0 +1,16 @@
+<div class="content" role="main">
+
+  <div class="card highlight-card card-small">
+
+    <span>
+      <input
+      type="text"
+      placeholder="New Todo"
+      [(ngModel)]="value"
+      (keyup.enter)="addTodo()">
+      <button (click)="addTodo()">Add</button>
+    </span>
+
+  </div>
+
+</div>

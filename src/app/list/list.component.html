@@ -1,0 +1,19 @@
+<div class="content" role="main">
+
+  <ul *ngIf="todoService.todos.length; else noTodos">
+
+    <li *ngFor="let todo of todoService.todos; let i = index" class="card highlight-card card-small">
+      <input type="checkbox" [checked]="todo.complete" (change)="onChange(todo.id)">
+      <div>
+      <p [class.checked]="todo.complete"><strong>{{ i + 1 }}.</strong>
+      {{ todo.title }}</p>
+<!--        <small>{{ todo.date | date:'mediumDate'}}</small>-->
+      </div>
+      <button (click)="deleteTodo(todo.id)">x</button>
+    </li>
+
+  </ul>
+  <ng-template #noTodos>
+    <p class="noTodos">No todos yet!(</p>
+  </ng-template>
+</div>

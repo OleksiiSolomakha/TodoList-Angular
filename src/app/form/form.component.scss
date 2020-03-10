@@ -1,0 +1,51 @@
+.content {
+  display: flex;
+  margin: 32px auto 0;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card.card-small {
+  height: 16px;
+  width: 500px;
+}
+
+.card.highlight-card {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  min-width: 30%;
+  position: relative;
+}
+
+input {
+  width: 400px;
+}
+
+button {
+  color: #FFF;
+  background: linear-gradient(to right, #DD0031 50%, #C3002F 50%);
+  outline: none;
+  border: none;
+  padding: .2em;
+  cursor: pointer;
+}

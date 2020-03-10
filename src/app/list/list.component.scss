@@ -1,0 +1,69 @@
+.content {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card.card-small {
+  height: 16px;
+  width: 500px;
+}
+
+.card.highlight-card {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  min-width: 30%;
+  position: relative;
+}
+
+ul {
+  padding: 0;
+  li {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    p {
+      margin: 0;
+      small {
+        font-size: .7em;
+      }
+    }
+  }
+}
+button {
+  color: #FFF;
+  background: linear-gradient(to right, #DD0031 50%, #C3002F 50%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through #DD0031 double;
+}
+.noTodos {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #1976D2, 0 0 10px #1976D2, 0 0 15px #FFF, 0 0 20px #1976D2, 0 0 30px #1976D2, 0 0 40px #1976D2, 0 0 55px #1976D2, 0 0 75px #1976D2;
+  font-size: 1.5em;
+  font-weight: bold;
+}
